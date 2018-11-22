@@ -37,6 +37,7 @@ public class LoginGeneratorTest {
 
     @Test
     public void CT4(){
+        
         lg.generateLoginForNomAndPrenom("Ralling","John");
         assertTrue(ls.loginExists("JRAL2"));
     }
