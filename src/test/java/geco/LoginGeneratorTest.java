@@ -17,6 +17,12 @@ public class LoginGeneratorTest {
     }
 
     @Test
+    public void CT(){
+        lg.generateLoginForNomAndPrenom("Du","Paul");
+        assertTrue(ls.loginExists("PDU"));
+    }
+
+    @Test
     public void CT1(){
         lg.generateLoginForNomAndPrenom("Durand","Paul");
         assertTrue(ls.loginExists("PDUR"));
