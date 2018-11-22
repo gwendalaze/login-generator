@@ -24,6 +24,19 @@ public class LoginGeneratorTest {
 
     @Test
     public void CT2(){
+        lg.generateLoginForNomAndPrenom("Rolling","Jean");
+        assertTrue(ls.loginExists("JROL1"));
+    }
+
+    @Test
+    public void CT3(){
+        lg.generateLoginForNomAndPrenom("Dùrand","Paul");
+        assertTrue(ls.loginExists("PDUR"));
+    }
+
+
+    @Test
+    public void CT4(){
         lg.generateLoginForNomAndPrenom("Ralling","John");
         assertTrue(ls.loginExists("JRAL2"));
     }
